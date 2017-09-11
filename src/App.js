@@ -72,15 +72,20 @@ class App extends Component {
       spanish:this.spanishCards
     },this);
   }
+  handleNewWord() {
+    let word = Object.assign({}, this.state.words);
+
+
+  }
 
   render() {
     return (
       <div>
       <Question
-      english={this.state.englishCards}
+       english={this.state.englishCards}
       spanish={this.state.spanishCards}
       german={this.state.germanCards}
-      french={this.state.frenchCards}
+      french={this.state.frenchCards} 
            />
       <Results />
       </div>

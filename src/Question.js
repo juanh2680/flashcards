@@ -1,20 +1,17 @@
 import React, { Component } from 'react';
 
-var input = {
-    fromLanguage: "",
-    toLanguage: ''
-}
+
 class Question extends Component() {
     constructor() {
 
         super();
          this.state = input
     }
-    languageOption(e) {
+     languageOption(e) {
        var fromLanguage = e.target.value
         var toLanguage = e.target.value
-        if (fromLanguage == 'English') {
-            return <div>{this.props.english} </div>
+         if (fromLanguage == 'English') {
+             return <div>{this.props.english} </div>
         }
         if (fromLanguage == 'French') {
             return <div>{this.props.French} </div>
@@ -26,8 +23,6 @@ class Question extends Component() {
             return <div>{this.props.spanish} </div>
         }
     }
-
-
     render() {
         return (
             <div className="questionInput">
